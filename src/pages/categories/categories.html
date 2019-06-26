@@ -1,0 +1,17 @@
+<ion-content>
+  <div class="categories">
+
+    <div class="title">
+      <h1>CATEGORIES</h1>
+    </div>
+
+    <div class="list">
+
+      <div class="sci" *ngFor="let n of questions">
+        <button ion-button id="click" (click)="getScience(n.category, n.questions)">{{n.category}}</button>
+      </div>
+    </div>
+
+
+  </div>
+</ion-content>

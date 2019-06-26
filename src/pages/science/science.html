@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title> Back</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+
+    <ion-slides #slides>
+      <ion-slide *ngFor="let n of Questions; let i = index">
+        <h3> Question {{i + 1}} </h3>
+
+        <h2>{{n.question}}</h2>
+        <ion-list>
+          <button ion-button class="slide" *ngFor="let o of n.options"
+            (click)="next(n.questionNo, n.options, o.option)" (click)='Next()'>
+            {{o.option}}
+          </button>
+        </ion-list>
+
+      </ion-slide>
+      <ion-slide class="view">
+        <h1 class="quiz">QUIZ <br> COMPLETED</h1>
+        <button ion-button full (click)="toScore()" id="view">Get Your Score</button>
+      </ion-slide>
+    </ion-slides>
+
+  </div>
+</ion-content>

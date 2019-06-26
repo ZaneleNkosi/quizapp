@@ -1,0 +1,94 @@
+page-science {
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .side {
+    background: #F7C10F;
+    width: 15vh;
+    height: 94vh;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 27%;
+    top: 10%;
+  }
+
+  img {
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+  }
+
+  h1 {
+    color: white;
+    font-size: 7vh;
+  }
+
+  .h1{
+    color: black;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  #butt {
+    width: 40vh;
+    border-radius: 20px;
+    border: 5px solid #030C3B;
+    background: transparent;
+    color: black;
+  }
+
+  .slide {
+    width: 50vh;
+    height: 10vh;
+    background: #F7C10F;
+    color: rgb(66, 64, 64);
+  }
+
+  .slides {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: #33333B;
+    font-family: 'Roboto Condensed';
+  }
+
+  #view{
+    width: 90%;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    background: #F7C10F;
+  }
+
+  .view{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quiz{
+    width: 90%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  }
+
+  h3{
+    color: white;
+    font-size: 7vh;
+    font-family: 'Ubuntu';
+  }
+  h2{
+    font-family: 'Lato';
+  }
+
+}
